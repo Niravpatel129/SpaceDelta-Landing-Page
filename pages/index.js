@@ -92,6 +92,11 @@ class Index extends React.Component {
           }}
         />
         <img
+          className="banner"
+          src="https://i.ibb.co/kmgvqJ4/logo.png"
+          width="510px"
+        />
+        <img
           className="zombie"
           src="https://i.imgur.com/kY2VdFf.png"
           width="800"

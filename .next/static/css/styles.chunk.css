@@ -46,6 +46,10 @@ canvas {
   padding: 0;
   position: absolute; }
 
+html,
+body {
+  overflow: hidden; }
+
 .zombie {
   z-index: -1;
   display: block;
@@ -64,6 +68,14 @@ img {
   #secondary {
     width: 30%;
     margin-left: 3%; } }
+
+.banner {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 20px;
+  opacity: 0.7;
+  animation: fadein 10s; }
 
 /* Tabled Portrait */
 @media screen and (max-width: 768px) {
