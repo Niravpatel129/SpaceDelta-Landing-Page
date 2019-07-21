@@ -104,7 +104,7 @@ class Index extends React.Component {
             width=""
           />
           <img
-            className="three icon"
+            className="three"
             src="https://i.imgur.com/eencXws.png"
             width=""
           />

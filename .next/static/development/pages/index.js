@@ -21821,7 +21821,7 @@ function (_React$Component) {
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        className: "three icon",
+        className: "three",
         src: "https://i.imgur.com/eencXws.png",
         width: "",
         __source: {
