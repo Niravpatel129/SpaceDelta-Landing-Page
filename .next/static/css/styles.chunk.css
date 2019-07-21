@@ -53,6 +53,9 @@ h1 {
   animation: bounce 1s infinite alternate;
   -webkit-animation: bounce 1s infinite alternate; }
 
+img {
+  max-width: 100%; }
+
 .ione:hover {
   width: 50%; }
 

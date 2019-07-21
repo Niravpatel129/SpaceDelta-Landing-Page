@@ -1,0 +1,94 @@
+body {
+  background-color: black; }
+
+canvas {
+  z-index: 0;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  position: absolute; }
+
+.zombie {
+  position: fixed;
+  left: 23%;
+  bottom: -25%;
+  opacity: 0.8; }
+
+h1 {
+  color: white; }
+
+.one {
+  left: 100px;
+  bottom: 90px;
+  animation: bounce 1s infinite alternate;
+  -webkit-animation: bounce 1s infinite alternate;
+  width: 200px;
+  position: fixed; }
+
+.two {
+  width: 220px;
+  bottom: 50px;
+  left: 400px;
+  animation: bounce 1s infinite alternate;
+  -webkit-animation: bounce 1s infinite alternate;
+  position: fixed; }
+
+.three {
+  width: 270px;
+  bottom: 20px;
+  left: 800px;
+  animation: bounce 1s infinite alternate;
+  -webkit-animation: bounce 1s infinite alternate;
+  position: fixed; }
+
+.four {
+  width: 210px;
+  bottom: 90px;
+  left: 1160px;
+  position: fixed;
+  animation: bounce 1s infinite alternate;
+  -webkit-animation: bounce 1s infinite alternate; }
+
+img {
+  max-width: 100%; }
+
+.ione:hover {
+  width: 50%; }
+
+/* Tablet Landscape */
+@media screen and (max-width: 1060px) {
+  #primary {
+    width: 67%; }
+  #secondary {
+    width: 30%;
+    margin-left: 3%; } }
+
+/* Tabled Portrait */
+@media screen and (max-width: 768px) {
+  #primary {
+    width: 100%; }
+  #secondary {
+    width: 100%;
+    margin: 0;
+    border: none; } }
+
+.icon {
+  transition: transform 0.2s;
+  /* Animation */ }
+
+.icon:hover {
+  width: 17%; }
+
+@keyframes bounce {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-15px); } }
+
+@-webkit-keyframes bounce {
+  from {
+    transform: translateY(0px); }
+  to {
+    transform: translateY(-15px); } }
+

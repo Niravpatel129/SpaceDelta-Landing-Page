@@ -3,6 +3,7 @@ import BaseLayout from "../components/layouts/BaseLayout.js";
 import Particles from "react-particles-js";
 import "./index.scss";
 import { Container, Row, Col } from "reactstrap";
+import Head from "next/head";
 
 class Human {
   talk() {
@@ -37,6 +38,9 @@ class Index extends React.Component {
   render() {
     return (
       <div>
+        <Head>
+          <title>Space Delta</title>
+        </Head>
         <Particles
           params={{
             particles: {
