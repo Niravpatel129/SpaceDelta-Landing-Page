@@ -430,7 +430,7 @@ function (_React$Component) {
             },
             line_linked: {
               enable: true,
-              opacity: 0.05
+              opacity: 0.001
             },
             move: {
               direction: "right",
@@ -449,11 +449,9 @@ function (_React$Component) {
           },
           interactivity: {
             enable: true,
-            mode: "repulse",
             events: {
               onhover: {
-                enable: true,
-                mode: "repulse"
+                enable: true
               },
               onclick: {
                 enable: true,
@@ -479,14 +477,14 @@ function (_React$Component) {
         width: "800",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 95
+          lineNumber: 93
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_4__["Container"], {
         className: "icons",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 101
+          lineNumber: 99
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
@@ -495,7 +493,7 @@ function (_React$Component) {
         width: "",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 102
+          lineNumber: 100
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
@@ -504,7 +502,7 @@ function (_React$Component) {
         width: "",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 107
+          lineNumber: 105
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
@@ -513,7 +511,7 @@ function (_React$Component) {
         width: "",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 112
+          lineNumber: 110
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
@@ -522,7 +520,7 @@ function (_React$Component) {
         width: "",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 117
+          lineNumber: 115
         },
         __self: this
       })));

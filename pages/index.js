@@ -53,7 +53,7 @@ class Index extends React.Component {
               },
               line_linked: {
                 enable: true,
-                opacity: 0.05
+                opacity: 0.001
               },
               move: {
                 direction: "right",
@@ -72,11 +72,9 @@ class Index extends React.Component {
             },
             interactivity: {
               enable: true,
-              mode: "repulse",
               events: {
                 onhover: {
-                  enable: true,
-                  mode: "repulse"
+                  enable: true
                 },
                 onclick: {
                   enable: true,
