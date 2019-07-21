@@ -61,11 +61,11 @@ img {
 }
 
 .three:hover {
-  width: 21%;
+  //   width: 21%;
 }
 
-.ione:hover {
-  width: 50%;
+.one:hover {
+  //   width: 50%;
 }
 /* Tablet Landscape */
 @media screen and (max-width: 1060px) {
@@ -90,11 +90,11 @@ img {
 }
 
 .icon {
-  transition: transform 0.2s; /* Animation */
+  display: inline;
 }
 
 .icon:hover {
-  width: 17%;
+  //   width: 17%;
 }
 
 @keyframes bounce {

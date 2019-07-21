@@ -53,7 +53,8 @@ class Index extends React.Component {
               },
               line_linked: {
                 enable: true,
-                opacity: 0.001
+                opacity: 0.001,
+                value: 1
               },
               move: {
                 direction: "right",
@@ -108,7 +109,7 @@ class Index extends React.Component {
             width=""
           />
           <img
-            className="three"
+            className="three icon"
             src="https://i.imgur.com/eencXws.png"
             width=""
           />
