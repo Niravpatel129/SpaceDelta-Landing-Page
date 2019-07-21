@@ -102,30 +102,36 @@ class Index extends React.Component {
           width="800"
         />
 
-        <Container className="icons">
-          <div className="floattest">
+        <div className="floattest">
+          <a href="/">
             <img
-              className="one icon"
+              className="one icon grow"
               src="https://i.imgur.com/tV5pv3V.png"
               width=""
             />
+          </a>
+          <a href="/">
             <img
               className="two icon"
               src="https://i.imgur.com/hLmggYd.png"
               width=""
             />
+          </a>
+          <a href="/">
             <img
               className="three icon"
               src="https://i.imgur.com/eencXws.png"
               width="710px"
             />
+          </a>
+          <a href="/">
             <img
               className="four icon"
               src="https://i.imgur.com/CPshYfM.png"
               width=""
             />
-          </div>
-        </Container>
+          </a>
+        </div>
       </div>
     );
   }
