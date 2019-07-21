@@ -21741,65 +21741,40 @@ function (_React$Component) {
         params: {
           particles: {
             number: {
-              value: 300,
-              density: {
-                enable: true,
-                value_area: 1500
-              }
-            },
-            line_linked: {
-              enable: true,
-              opacity: 0.02
-            },
-            move: {
-              direction: "right",
-              speed: 0.05
+              value: 80
             },
             size: {
-              value: 1
-            },
-            opacity: {
-              anim: {
-                enable: true,
-                speed: 1,
-                opacity_min: 0.05
-              }
+              value: 3
             }
           },
           interactivity: {
             events: {
-              onclick: {
+              onhover: {
                 enable: true,
                 mode: "repulse"
               }
-            },
-            modes: {
-              push: {
-                particles_nb: 1
-              }
             }
-          },
-          retina_detect: true
+          }
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 44
+          lineNumber: 89
         },
         __self: this
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+      }), "v2.7.0", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
         className: "zombie",
         src: "https://i.imgur.com/kY2VdFf.png",
         width: "800",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 89
+          lineNumber: 110
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_4__["Container"], {
         className: "icons",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 95
+          lineNumber: 115
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
@@ -21808,7 +21783,7 @@ function (_React$Component) {
         width: "",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 96
+          lineNumber: 116
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
@@ -21817,7 +21792,7 @@ function (_React$Component) {
         width: "",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 101
+          lineNumber: 121
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
@@ -21826,7 +21801,7 @@ function (_React$Component) {
         width: "",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 106
+          lineNumber: 126
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
@@ -21835,7 +21810,7 @@ function (_React$Component) {
         width: "",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 111
+          lineNumber: 131
         },
         __self: this
       })));

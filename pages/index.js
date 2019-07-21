@@ -41,7 +41,7 @@ class Index extends React.Component {
         <Head>
           <title>Space Delta</title>
         </Head>
-        <Particles
+        {/* <Particles
           params={{
             particles: {
               number: {
@@ -85,13 +85,33 @@ class Index extends React.Component {
             },
             retina_detect: true
           }}
+        /> */}
+        <Particles
+          params={{
+            particles: {
+              number: {
+                value: 80
+              },
+              size: {
+                value: 3
+              }
+            },
+            interactivity: {
+              events: {
+                onhover: {
+                  enable: true,
+                  mode: "repulse"
+                }
+              }
+            }
+          }}
         />
+        v2.7.0
         <img
           className="zombie"
           src="https://i.imgur.com/kY2VdFf.png"
           width="800"
         />
-
         <Container className="icons">
           <img
             className="one icon"
