@@ -91,45 +91,29 @@ class Index extends React.Component {
             retina_detect: true
           }}
         />
-        <img
-          className="banner"
-          src="https://i.ibb.co/kmgvqJ4/logo.png"
-          width="510px"
-        />
-        <img
-          className="zombie"
-          src="https://i.imgur.com/kY2VdFf.png"
-          width="800"
-        />
+        <img className="banner" src="../static/logo.png" width="510px" />
+        <img className="zombie" src="../static/Dude.png" width="800" />
 
         <div className="floattest">
           <a href="/">
             <img
               className="one icon grow"
-              src="https://i.imgur.com/tV5pv3V.png"
+              src="../static/Mercury.png"
               width=""
             />
           </a>
           <a href="/">
-            <img
-              className="two icon"
-              src="https://i.imgur.com/hLmggYd.png"
-              width=""
-            />
+            <img className="two icon" src="../static/Venus.png" width="" />
           </a>
           <a href="/">
             <img
               className="three icon"
-              src="https://i.imgur.com/eencXws.png"
+              src="../static/Earth.png"
               width="710px"
             />
           </a>
           <a href="/">
-            <img
-              className="four icon"
-              src="https://i.imgur.com/CPshYfM.png"
-              width=""
-            />
+            <img className="four icon" src="../static/Mars.png" width="" />
           </a>
         </div>
       </div>

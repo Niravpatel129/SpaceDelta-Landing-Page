@@ -474,7 +474,7 @@ function (_React$Component) {
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
         className: "banner",
-        src: "https://i.ibb.co/kmgvqJ4/logo.png",
+        src: "../static/logo.png",
         width: "510px",
         __source: {
           fileName: _jsxFileName,
@@ -483,82 +483,82 @@ function (_React$Component) {
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
         className: "zombie",
-        src: "https://i.imgur.com/kY2VdFf.png",
+        src: "../static/Dude.png",
         width: "800",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 99
+          lineNumber: 95
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "floattest",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 105
+          lineNumber: 97
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         href: "/",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 106
+          lineNumber: 98
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
         className: "one icon grow",
-        src: "https://i.imgur.com/tV5pv3V.png",
+        src: "../static/Mercury.png",
         width: "",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 107
+          lineNumber: 99
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         href: "/",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 113
+          lineNumber: 105
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
         className: "two icon",
-        src: "https://i.imgur.com/hLmggYd.png",
+        src: "../static/Venus.png",
         width: "",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 114
+          lineNumber: 106
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         href: "/",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 120
+          lineNumber: 108
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
         className: "three icon",
-        src: "https://i.imgur.com/eencXws.png",
+        src: "../static/Earth.png",
         width: "710px",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 121
+          lineNumber: 109
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         href: "/",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 127
+          lineNumber: 115
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
         className: "four icon",
-        src: "https://i.imgur.com/CPshYfM.png",
+        src: "../static/Mars.png",
         width: "",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 128
+          lineNumber: 116
         },
         __self: this
       }))));
