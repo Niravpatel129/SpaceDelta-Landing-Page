@@ -311,9 +311,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(reactstrap__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! next/head */ "next/head");
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! axios */ "axios");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_6__);
 var _jsxFileName = "/Users/niravpatel/Desktop/spacedelta/pages/index.js";
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
 
@@ -321,16 +325,13 @@ function _assertThisInitialized(self) { if (self === void 0) { throw new Referen
 
 function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
 
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
-
-function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
 function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
 
 function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
 
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
 
 
 
@@ -338,25 +339,8 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
 
 
-var Human =
-/*#__PURE__*/
-function () {
-  function Human() {
-    _classCallCheck(this, Human);
-  }
 
-  _createClass(Human, [{
-    key: "talk",
-    value: function talk() {}
-  }], [{
-    key: "walk",
-    value: function walk() {}
-  }]);
-
-  return Human;
-}();
-
-var human = new Human();
+var playerCount;
 
 var Index =
 /*#__PURE__*/
@@ -371,15 +355,31 @@ function (_React$Component) {
   }]);
 
   function Index() {
+    var _this;
+
     _classCallCheck(this, Index);
 
-    return _possibleConstructorReturn(this, _getPrototypeOf(Index).call(this));
+    _this = _possibleConstructorReturn(this, _getPrototypeOf(Index).call(this));
+    _this.state = {
+      playersOnline: 0
+    };
+    return _this;
   }
 
   _createClass(Index, [{
     key: "componentDidMount",
     value: function componentDidMount() {
-      human.talk();
+      var _this2 = this;
+
+      axios__WEBPACK_IMPORTED_MODULE_6___default.a.get("https://api.mcsrvstat.us/2/play.spacedelta.net").then(function (res) {
+        console.log(res.data.players.online);
+        playerCount = res.data.players.online;
+        console.log(playerCount);
+
+        _this2.setState({
+          playersOnline: playerCount
+        });
+      });
     }
   }, {
     key: "componentWillUnmount",
@@ -388,24 +388,31 @@ function (_React$Component) {
     key: "componentDidUpdate",
     value: function componentDidUpdate() {}
   }, {
+    key: "copytoClipboard",
+    value: function copytoClipboard() {
+      console.log("hello i clicked");
+    }
+  }, {
     key: "render",
     value: function render() {
+      var _this3 = this;
+
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 30
+          lineNumber: 34
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_head__WEBPACK_IMPORTED_MODULE_5___default.a, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 31
+          lineNumber: 35
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("title", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 32
+          lineNumber: 36
         },
         __self: this
       }, "Space Delta"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("link", {
@@ -414,7 +421,7 @@ function (_React$Component) {
         href: "/static/logo.png",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 33
+          lineNumber: 37
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_particles_js__WEBPACK_IMPORTED_MODULE_2___default.a, {
@@ -468,7 +475,7 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 39
+          lineNumber: 43
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
@@ -477,7 +484,7 @@ function (_React$Component) {
         width: "510px",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 89
+          lineNumber: 93
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
@@ -486,22 +493,22 @@ function (_React$Component) {
         width: "800",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 90
+          lineNumber: 94
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
         className: "online",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 91
+          lineNumber: 95
         },
         __self: this
-      }, "Players Online: 55"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
+      }, "Players Online: ", this.state.playersOnline || playerCount || 0), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
         onMouseEnter: function onMouseEnter() {
           return console.log("mouse hovering over ip");
         },
         onClick: function onClick() {
-          return console.log("mouse hovering over ip");
+          return _this3.copytoClipboard();
         },
         onMouseLeave: function onMouseLeave() {
           return console.log("mouse hovering over ip");
@@ -509,28 +516,28 @@ function (_React$Component) {
         className: "ip",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 92
+          lineNumber: 98
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
         className: "clicktocopy",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 98
+          lineNumber: 104
         },
         __self: this
       }, "Click to Copy"), "IP: play.spacedelta.net"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "floattest",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 102
+          lineNumber: 108
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         href: "/",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 103
+          lineNumber: 109
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
@@ -539,14 +546,14 @@ function (_React$Component) {
         width: "",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 104
+          lineNumber: 110
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         href: "/",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 110
+          lineNumber: 116
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
@@ -555,14 +562,14 @@ function (_React$Component) {
         width: "",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 111
+          lineNumber: 117
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         href: "/",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 113
+          lineNumber: 119
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
@@ -571,14 +578,14 @@ function (_React$Component) {
         width: "710px",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 114
+          lineNumber: 120
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         href: "/",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 120
+          lineNumber: 126
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
@@ -587,7 +594,7 @@ function (_React$Component) {
         width: "",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 121
+          lineNumber: 127
         },
         __self: this
       }))));
@@ -632,6 +639,17 @@ function (_React$Component) {
 
 module.exports = __webpack_require__(/*! ./pages/index.js */"./pages/index.js");
 
+
+/***/ }),
+
+/***/ "axios":
+/*!************************!*\
+  !*** external "axios" ***!
+  \************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("axios");
 
 /***/ }),
 

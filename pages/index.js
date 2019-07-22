@@ -4,27 +4,31 @@ import Particles from "react-particles-js";
 import "./index.scss";
 import { Container, Row, Col } from "reactstrap";
 import Head from "next/head";
+import Axios from "axios";
 
-class Human {
-  talk() {}
-
-  static walk() {}
-}
-
-const human = new Human();
-
+var playerCount;
 class Index extends React.Component {
   static getInitialProps() {
     return {};
   }
   constructor() {
     super();
+    this.state = { playersOnline: 0 };
   }
   componentDidMount() {
-    human.talk();
+    Axios.get("https://api.mcsrvstat.us/2/play.spacedelta.net").then(res => {
+      console.log(res.data.players.online);
+      playerCount = res.data.players.online;
+      console.log(playerCount);
+      this.setState({ playersOnline: playerCount });
+    });
   }
   componentWillUnmount() {}
   componentDidUpdate() {}
+
+  copytoClipboard() {
+    console.log("hello i clicked");
+  }
   render() {
     return (
       <div>
@@ -88,10 +92,12 @@ class Index extends React.Component {
         />
         <img className="banner" src="../static/logo.png" width="510px" />
         <img className="zombie" src="../static/Dude.png" width="800" />
-        <h2 className="online">Players Online: 55</h2>
+        <h2 className="online">
+          Players Online: {this.state.playersOnline || playerCount || 0}
+        </h2>
         <h2
           onMouseEnter={() => console.log("mouse hovering over ip")}
-          onClick={() => console.log("mouse hovering over ip")}
+          onClick={() => this.copytoClipboard()}
           onMouseLeave={() => console.log("mouse hovering over ip")}
           className="ip"
         >
