@@ -95,6 +95,7 @@ class Index extends React.Component {
           onMouseLeave={() => console.log("mouse hovering over ip")}
           className="ip"
         >
+          <p className="clicktocopy">Click to Copy</p>
           IP: play.spacedelta.net
         </h2>
 

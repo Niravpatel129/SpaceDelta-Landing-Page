@@ -22,7 +22,14 @@ a {
   left: 12%;
   border: 1px solid white; }
 
+.clicktocopy {
+  display: none; }
+
+.ip:hover {
+  color: gold; }
+
 .ip {
+  z-index: 1;
   padding: 10px;
   color: white;
   display: inline;
