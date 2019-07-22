@@ -13,6 +13,24 @@ a {
   to {
     opacity: 1; } }
 
+.online {
+  padding: 10px;
+  color: white;
+  display: inline;
+  position: absolute;
+  top: 11%;
+  left: 12%;
+  border: 1px solid white; }
+
+.ip {
+  padding: 10px;
+  color: white;
+  display: inline;
+  position: absolute;
+  top: 11%;
+  right: 12%;
+  border: 1px solid white; }
+
 /* Firefox < 16 */
 @-moz-keyframes fadein {
   from {
@@ -94,9 +112,12 @@ img {
   text-align: center;
   margin: 0 auto;
   padding-top: 20px;
-  opacity: 0.7;
+  opacity: 0.8 0.5;
   animation: glow 5s;
-  animation-fill-mode: forwards; }
+  animation-fill-mode: forwards;
+  animation: skew 2s infinite;
+  transform: skew(2deg);
+  animation-direction: alternate; }
 
 /* Tabled Portrait */
 @media screen and (max-width: 768px) {
@@ -123,7 +144,7 @@ img {
   padding: 55px;
   animation: bounce 10s infinite alternate;
   -webkit-animation: bounce 10s infinite alternate;
-  width: 10%;
+  width: 13%;
   transition: all 0.2s ease-in-out; }
 
 .icon:hover {
@@ -142,11 +163,10 @@ img {
   margin-bottom: 52px; }
 
 .three {
-  width: 12%;
+  width: 16%;
   padding-bottom: 10px; }
 
 .zombie {
-  z-index: 0;
   -webkit-animation: fadein 2s;
   /* Safari, Chrome and Opera > 12.1 */
   -moz-animation: fadein 2s;
@@ -168,6 +188,12 @@ img {
     transform: translateY(0px); }
   to {
     transform: translateY(-10px); } }
+
+@keyframes skew {
+  0% {
+    transform: skewX(1.2deg); }
+  100% {
+    transform: skewX(-3deg); } }
 
 
 /*# sourceMappingURL=styles.chunk.css.map*/

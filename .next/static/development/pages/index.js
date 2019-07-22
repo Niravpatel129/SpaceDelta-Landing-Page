@@ -21666,14 +21666,10 @@ function () {
 
   _createClass(Human, [{
     key: "talk",
-    value: function talk() {
-      console.log("i am talking");
-    }
+    value: function talk() {}
   }], [{
     key: "walk",
-    value: function walk() {
-      console.log("i am walking");
-    }
+    value: function walk() {}
   }]);
 
   return Human;
@@ -21689,7 +21685,6 @@ function (_React$Component) {
   _createClass(Index, null, [{
     key: "getInitialProps",
     value: function getInitialProps() {
-      console.log("get inital props");
       return {};
     }
   }]);
@@ -21704,40 +21699,44 @@ function (_React$Component) {
     key: "componentDidMount",
     value: function componentDidMount() {
       human.talk();
-      console.log("component did mount");
     }
   }, {
     key: "componentWillUnmount",
-    value: function componentWillUnmount() {
-      console.log("hello");
-    }
+    value: function componentWillUnmount() {}
   }, {
     key: "componentDidUpdate",
-    value: function componentDidUpdate() {
-      console.log("did unmount");
-    }
+    value: function componentDidUpdate() {}
   }, {
     key: "render",
     value: function render() {
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 40
+          lineNumber: 30
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_head__WEBPACK_IMPORTED_MODULE_5___default.a, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 41
+          lineNumber: 31
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("title", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 42
+          lineNumber: 32
         },
         __self: this
-      }, "Space Delta")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_particles_js__WEBPACK_IMPORTED_MODULE_2___default.a, {
+      }, "Space Delta"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("link", {
+        rel: "shortcut icon",
+        type: "image/x-icon",
+        href: "/static/logo.png",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 33
+        },
+        __self: this
+      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_particles_js__WEBPACK_IMPORTED_MODULE_2___default.a, {
         params: {
           particles: {
             number: {
@@ -21788,7 +21787,7 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 44
+          lineNumber: 39
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
@@ -21797,7 +21796,7 @@ function (_React$Component) {
         width: "510px",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 94
+          lineNumber: 89
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
@@ -21806,21 +21805,44 @@ function (_React$Component) {
         width: "800",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 95
+          lineNumber: 90
         },
         __self: this
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
+        className: "online",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 91
+        },
+        __self: this
+      }, "Players Online: 55"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
+        onMouseEnter: function onMouseEnter() {
+          return console.log("mouse hovering over ip");
+        },
+        onClick: function onClick() {
+          return console.log("mouse hovering over ip");
+        },
+        onMouseLeave: function onMouseLeave() {
+          return console.log("mouse hovering over ip");
+        },
+        className: "ip",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 92
+        },
+        __self: this
+      }, "IP: play.spacedelta.net"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "floattest",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 97
+          lineNumber: 101
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         href: "/",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 98
+          lineNumber: 102
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
@@ -21829,14 +21851,14 @@ function (_React$Component) {
         width: "",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 99
+          lineNumber: 103
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         href: "/",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 105
+          lineNumber: 109
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
@@ -21845,14 +21867,14 @@ function (_React$Component) {
         width: "",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 106
+          lineNumber: 110
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         href: "/",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 108
+          lineNumber: 112
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
@@ -21861,14 +21883,14 @@ function (_React$Component) {
         width: "710px",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 109
+          lineNumber: 113
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         href: "/",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 115
+          lineNumber: 119
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
@@ -21877,7 +21899,7 @@ function (_React$Component) {
         width: "",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 116
+          lineNumber: 120
         },
         __self: this
       }))));

@@ -6,20 +6,15 @@ import { Container, Row, Col } from "reactstrap";
 import Head from "next/head";
 
 class Human {
-  talk() {
-    console.log("i am talking");
-  }
+  talk() {}
 
-  static walk() {
-    console.log("i am walking");
-  }
+  static walk() {}
 }
 
 const human = new Human();
 
 class Index extends React.Component {
   static getInitialProps() {
-    console.log("get inital props");
     return {};
   }
   constructor() {
@@ -27,19 +22,19 @@ class Index extends React.Component {
   }
   componentDidMount() {
     human.talk();
-    console.log("component did mount");
   }
-  componentWillUnmount() {
-    console.log("hello");
-  }
-  componentDidUpdate() {
-    console.log("did unmount");
-  }
+  componentWillUnmount() {}
+  componentDidUpdate() {}
   render() {
     return (
       <div>
         <Head>
           <title>Space Delta</title>
+          <link
+            rel="shortcut icon"
+            type="image/x-icon"
+            href="/static/logo.png"
+          />
         </Head>
         <Particles
           params={{
@@ -93,6 +88,15 @@ class Index extends React.Component {
         />
         <img className="banner" src="../static/logo.png" width="510px" />
         <img className="zombie" src="../static/Dude.png" width="800" />
+        <h2 className="online">Players Online: 55</h2>
+        <h2
+          onMouseEnter={() => console.log("mouse hovering over ip")}
+          onClick={() => console.log("mouse hovering over ip")}
+          onMouseLeave={() => console.log("mouse hovering over ip")}
+          className="ip"
+        >
+          IP: play.spacedelta.net
+        </h2>
 
         <div className="floattest">
           <a href="/">
