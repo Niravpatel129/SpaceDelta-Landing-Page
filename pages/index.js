@@ -1,11 +1,10 @@
 import React from "react";
-import BaseLayout from "../components/layouts/BaseLayout.js";
 import Particles from "react-particles-js";
 import "./index.scss";
-import { Container, Row, Col } from "reactstrap";
 import Head from "next/head";
-import Axios from "axios";
+import { CopyToClipboard } from "react-copy-to-clipboard";
 
+import Axios from "axios";
 var playerCount;
 class Index extends React.Component {
   static getInitialProps() {
@@ -93,7 +92,7 @@ class Index extends React.Component {
         <img className="banner" src="../static/logo.png" width="510px" />
         <img className="zombie" src="../static/Dude.png" width="800" />
         <h2 className="online">
-          Players Online: {this.state.playersOnline || playerCount || 0}
+          Players Online: {this.state.playersOnline || playerCount || ""}
         </h2>
         <h2
           onMouseEnter={() => console.log("mouse hovering over ip")}
@@ -102,7 +101,9 @@ class Index extends React.Component {
           className="ip"
         >
           <p className="clicktocopy">Click to Copy</p>
-          IP: play.spacedelta.net
+          <CopyToClipboard text={"play.spacedelta.net"}>
+            <a>IP: play.spacedelta.net</a>
+          </CopyToClipboard>
         </h2>
 
         <div className="floattest">
