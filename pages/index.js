@@ -37,6 +37,56 @@ class Index extends React.Component {
   render() {
     return (
       <React.Fragment>
+        <Particles
+          params={{
+            particles: {
+              number: {
+                value: 300,
+                density: {
+                  enable: true,
+                  value_area: 1500
+                }
+              },
+              line_linked: {
+                enable: true,
+                opacity: 0.001,
+                value: 1
+              },
+              move: {
+                direction: "right",
+                speed: 0.05
+              },
+              size: {
+                value: 1
+              },
+              opacity: {
+                anim: {
+                  enable: true,
+                  speed: 1,
+                  opacity_min: 0.05
+                }
+              }
+            },
+            interactivity: {
+              enable: true,
+              events: {
+                onhover: {
+                  enable: true
+                },
+                onclick: {
+                  enable: true,
+                  mode: "repulse"
+                }
+              },
+              modes: {
+                push: {
+                  particles_nb: 1
+                }
+              }
+            },
+            retina_detect: true
+          }}
+        />
         <div className={classnames("lds-ring", this.state.ringsLoad)}>
           <div />
           <div />
@@ -61,56 +111,7 @@ class Index extends React.Component {
               href="/static/logo.png"
             />
           </Head>
-          <Particles
-            params={{
-              particles: {
-                number: {
-                  value: 300,
-                  density: {
-                    enable: true,
-                    value_area: 1500
-                  }
-                },
-                line_linked: {
-                  enable: true,
-                  opacity: 0.001,
-                  value: 1
-                },
-                move: {
-                  direction: "right",
-                  speed: 0.05
-                },
-                size: {
-                  value: 1
-                },
-                opacity: {
-                  anim: {
-                    enable: true,
-                    speed: 1,
-                    opacity_min: 0.05
-                  }
-                }
-              },
-              interactivity: {
-                enable: true,
-                events: {
-                  onhover: {
-                    enable: true
-                  },
-                  onclick: {
-                    enable: true,
-                    mode: "repulse"
-                  }
-                },
-                modes: {
-                  push: {
-                    particles_nb: 1
-                  }
-                }
-              },
-              retina_detect: true
-            }}
-          />
+
           <img className="banner" src="../static/logo.png" width="510px" />
           <img className="zombie" src="../static/Dude.png" width="800" />
           <h2 className="online">
