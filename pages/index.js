@@ -93,16 +93,7 @@ class Index extends React.Component {
           <div />
           <div />
         </div>
-        <div
-          className={this.state.pageLoaded}
-          onLoad={() => {
-            console.log("page loaded");
-            this.setState({
-              pageLoaded: "Loaded",
-              ringsLoad: "ringsNotLoaded"
-            });
-          }}
-        >
+        <div className={this.state.pageLoaded}>
           <Head>
             <title>Space Delta</title>
             <link
@@ -112,7 +103,18 @@ class Index extends React.Component {
             />
           </Head>
 
-          <img className="banner" src="../static/logo.png" width="510px" />
+          <img
+            onLoad={() => {
+              console.log("page loaded");
+              this.setState({
+                pageLoaded: "Loaded",
+                ringsLoad: "ringsNotLoaded"
+              });
+            }}
+            className="banner"
+            src="../static/logo.png"
+            width="510px"
+          />
           <img className="zombie" src="../static/Dude.png" width="800" />
           <h2 className="online">
             Players Online: {this.state.playersOnline || playerCount || ""}
