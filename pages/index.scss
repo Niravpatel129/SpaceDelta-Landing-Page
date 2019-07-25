@@ -1,3 +1,6 @@
+* {
+  cursor: cell;
+}
 @keyframes glow {
   from {
     filter: brightness(100%);
@@ -31,6 +34,7 @@
 }
 
 .ip:hover {
+  cursor: copy;
   color: whitesmoke;
 }
 
@@ -116,10 +120,6 @@ body {
 
 h1 {
   color: white;
-}
-
-img {
-  max-width: 100%;
 }
 
 /* Tablet Landscape */
@@ -314,9 +314,30 @@ img {
   z-index: -10;
 }
 .line1 {
+  width: 120%;
   position: absolute;
-  top: 50px;
-  left: -5px;
+  // top: 50px;
+  left: -20%;
   z-index: -5;
   opacity: 0.9;
+  animation: wave 3s infinite alternate, glowAgain 3s infinite alternate;
+}
+
+// WAVES
+@keyframes wave {
+  0% {
+    transform: skew(0);
+  }
+  100% {
+    transform: skew(0deg, 3deg);
+  }
+}
+
+@keyframes glowAgain {
+  0% {
+    filter: contrast(100%) brightness(100%);
+  }
+  100% {
+    filter: contrast(200%) brightness(150%);
+  }
 }
