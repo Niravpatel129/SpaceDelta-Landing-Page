@@ -162,7 +162,7 @@ class Index extends React.Component {
             <a href="/">
               <img className="four icon" src="../static/Mars.png" width="" />
             </a>
-            <img className="line1" src="../static/lines.png" />
+            <img className="line1" src="static/lines.png" />
           </div>
         </div>
       </React.Fragment>
