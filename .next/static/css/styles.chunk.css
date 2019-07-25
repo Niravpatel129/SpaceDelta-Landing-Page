@@ -145,7 +145,7 @@ img {
   filter: brightness(100%);
   display: inline-block;
   z-index: 1;
-  padding: 55px;
+  margin: 55px;
   animation: bounce 10s infinite alternate;
   -webkit-animation: bounce 10s infinite alternate;
   width: 13%;
@@ -168,7 +168,7 @@ img {
 
 .three {
   width: 16%;
-  padding-bottom: 10px; }
+  margin-bottom: 10px; }
 
 .zombie {
   -webkit-animation: fadein 2s;
@@ -264,7 +264,8 @@ img {
   position: absolute;
   top: 50px;
   left: -5px;
-  z-index: -5; }
+  z-index: -5;
+  opacity: 0.9; }
 
 
 /*# sourceMappingURL=styles.chunk.css.map*/
