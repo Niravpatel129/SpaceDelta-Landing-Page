@@ -461,7 +461,15 @@ function (_React$Component) {
           lineNumber: 153
         },
         __self: this
-      })), ">")));
+      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        className: "line1",
+        src: "../static/lines.png",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 155
+        },
+        __self: this
+      }))));
     }
   }]);
 

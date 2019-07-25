@@ -260,5 +260,11 @@ img {
   width: 100%;
   z-index: -10; }
 
+.line1 {
+  position: absolute;
+  top: 50px;
+  left: -5px;
+  z-index: -5; }
+
 
 /*# sourceMappingURL=styles.chunk.css.map*/
