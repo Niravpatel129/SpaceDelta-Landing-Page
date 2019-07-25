@@ -115,6 +115,7 @@ class Index extends React.Component {
             src="../static/logo.png"
             width="510px"
           />
+
           <img className="zombie" src="../static/Dude.png" width="800" />
           <h2 className="online">
             Players Online: {this.state.playersOnline || playerCount || ""}
@@ -151,6 +152,7 @@ class Index extends React.Component {
             <a href="/">
               <img className="four icon" src="../static/Mars.png" width="" />
             </a>
+            >
           </div>
         </div>
       </React.Fragment>

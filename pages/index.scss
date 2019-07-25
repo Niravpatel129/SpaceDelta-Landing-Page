@@ -306,3 +306,10 @@ img {
 .ringsNotLoaded {
   display: none;
 }
+
+.testing {
+  position: absolute;
+  left: 1px;
+  width: 100%;
+  z-index: -10;
+}
