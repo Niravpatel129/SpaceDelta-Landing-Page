@@ -20,7 +20,17 @@ class Index extends React.Component {
       ringsLoad: "ringsLoaded"
     };
   }
+
+  timerId = setTimeout(() => {
+    console.log("page force loaded");
+    this.setState({
+      pageLoaded: "Loaded",
+      ringsLoad: "ringsNotLoaded"
+    });
+  }, 2000);
+
   componentDidMount() {
+    this.timerId;
     Axios.get("https://api.mcsrvstat.us/2/play.spacedelta.net").then(res => {
       console.log(res.data.players.online);
       playerCount = res.data.players.online;
