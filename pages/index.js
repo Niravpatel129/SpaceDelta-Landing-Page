@@ -99,7 +99,7 @@ class Index extends React.Component {
             <link
               rel="shortcut icon"
               type="image/x-icon"
-              href="/static/logo.png"
+              href="/static/icon.ico"
             />
           </Head>
 

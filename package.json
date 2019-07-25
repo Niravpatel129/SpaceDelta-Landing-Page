@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "next",
     "build": "next build",
-    "start": "next start -p $PORT",
+    "start": "npm run build",
     "heroku-postbuild": "npm run build"
   },
   "keywords": [],
@@ -37,6 +37,7 @@
     "next": "^7.0.2",
     "next-routes": "^1.4.2",
     "node-sass": "^4.12.0",
+    "now": "^15.8.5",
     "optimize-css-assets-webpack-plugin": "^5.0.1",
     "react": "^16.8.6",
     "react-alert": "^5.5.0",
