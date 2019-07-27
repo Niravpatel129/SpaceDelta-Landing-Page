@@ -13,14 +13,27 @@
   to {
     opacity: 1; } }
 
-.online {
-  padding: 10px;
-  color: white;
-  display: inline;
+.playerCount {
+  display: absolute; }
+
+.onlinebanner {
+  display: block;
   position: absolute;
-  top: 11%;
+  top: 9%;
+  left: 8%;
+  height: 20%;
+  width: 20%;
+  height: 20%;
+  filter: blur(0.21px); }
+
+.onlinetext {
+  display: block;
+  color: white;
+  position: absolute;
+  top: 14%;
   left: 12%;
-  border: 1px solid white; }
+  font-size: 21px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif; }
 
 .clicktocopy {
   display: none; }
@@ -68,6 +81,7 @@
     opacity: 1; } }
 
 body {
+  background-image: url("https://cdn.discordapp.com/attachments/602307709001400341/603764407444701205/Space_Background_Darker.png");
   -webkit-touch-callout: none;
   /* iOS Safari */
   -webkit-user-select: none;
@@ -80,8 +94,7 @@ body {
   /* Internet Explorer/Edge */
   user-select: none;
   /* Non-prefixed version, currently
-                                    supported by Chrome and Opera */
-  background-color: black; }
+                                    supported by Chrome and Opera */ }
 
 canvas {
   z-index: 1;

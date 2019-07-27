@@ -221,6 +221,13 @@ function (_React$Component) {
           lineNumber: 49
         },
         __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "background",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 50
+        },
+        __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_particles_js__WEBPACK_IMPORTED_MODULE_1___default.a, {
         params: {
           particles: {
@@ -272,23 +279,17 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 50
+          lineNumber: 51
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: classnames__WEBPACK_IMPORTED_MODULE_4___default()("lds-ring", this.state.ringsLoad),
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 100
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        __source: {
-          fileName: _jsxFileName,
           lineNumber: 101
         },
         __self: this
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 102
@@ -306,23 +307,29 @@ function (_React$Component) {
           lineNumber: 104
         },
         __self: this
-      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: this.state.pageLoaded,
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 106
+          lineNumber: 105
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_head__WEBPACK_IMPORTED_MODULE_3___default.a, {
+      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: this.state.pageLoaded,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 107
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("title", {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_head__WEBPACK_IMPORTED_MODULE_3___default.a, {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 108
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("title", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 109
         },
         __self: this
       }, "Space Delta"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("link", {
@@ -331,7 +338,7 @@ function (_React$Component) {
         href: "/static/icon.ico",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 109
+          lineNumber: 110
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
@@ -348,7 +355,7 @@ function (_React$Component) {
         width: "510px",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 116
+          lineNumber: 117
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
@@ -357,17 +364,32 @@ function (_React$Component) {
         width: "800",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 129
-        },
-        __self: this
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
-        className: "online",
-        __source: {
-          fileName: _jsxFileName,
           lineNumber: 130
         },
         __self: this
-      }, "Players Online: ", this.state.playersOnline || playerCount || ""), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "playerCount",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 131
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        className: "onlinebanner",
+        src: "../static/onlineraw.png",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 132
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
+        className: "onlinetext",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 133
+        },
+        __self: this
+      }, " ", "Players Online: ", this.state.playersOnline || playerCount || "")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
         onMouseEnter: function onMouseEnter() {
           return console.log("mouse hovering over ip");
         },
@@ -380,41 +402,41 @@ function (_React$Component) {
         className: "ip",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 133
+          lineNumber: 138
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
         className: "clicktocopy",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 139
+          lineNumber: 144
         },
         __self: this
       }, "Click to Copy"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_copy_to_clipboard__WEBPACK_IMPORTED_MODULE_5__["CopyToClipboard"], {
         text: "play.spacedelta.net",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 140
+          lineNumber: 145
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 141
+          lineNumber: 146
         },
         __self: this
       }, "IP: play.spacedelta.net"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "floattest",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 144
+          lineNumber: 149
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         href: "/",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 145
+          lineNumber: 150
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
@@ -423,14 +445,14 @@ function (_React$Component) {
         width: "",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 146
+          lineNumber: 151
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         href: "/",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 152
+          lineNumber: 157
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
@@ -439,14 +461,14 @@ function (_React$Component) {
         width: "",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 153
+          lineNumber: 158
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         href: "/",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 155
+          lineNumber: 160
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
@@ -455,14 +477,14 @@ function (_React$Component) {
         width: "710px",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 156
+          lineNumber: 161
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         href: "/",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 162
+          lineNumber: 167
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
@@ -471,7 +493,7 @@ function (_React$Component) {
         width: "",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 163
+          lineNumber: 168
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
@@ -479,10 +501,10 @@ function (_React$Component) {
         src: "../static/Lines.png",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 165
+          lineNumber: 170
         },
         __self: this
-      }))));
+      })))));
     }
   }]);
 
