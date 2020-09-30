@@ -27,7 +27,7 @@
     "express": "^4.16.4",
     "express-jwt": "^5.3.1",
     "fontfaceobserver": "^2.1.0",
-    "formik": "^1.3.2",
+    "formik": "^2.1.6",
     "gsap": "^2.1.3",
     "hover.css": "^2.3.2",
     "immutable": "^4.0.0-rc.12",
