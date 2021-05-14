@@ -41,7 +41,7 @@
     "optimize-css-assets-webpack-plugin": "^5.0.1",
     "react": "^16.8.6",
     "react-alert": "^5.5.0",
-    "react-alert-template-basic": "^1.0.0",
+    "react-alert-template-basic": "^1.0.2",
     "react-copy-to-clipboard": "^5.0.1",
     "react-datepicker": "^1.8.0",
     "react-dom": "^16.6.0",
