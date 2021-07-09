@@ -30,7 +30,7 @@
     "formik": "^1.3.2",
     "gsap": "^2.1.3",
     "hover.css": "^2.3.2",
-    "immutable": "^4.0.0-rc.12",
+    "immutable": "^4.0.0-rc.14",
     "jsonwebtoken": "^8.3.0",
     "jwks-rsa": "^1.3.0",
     "moment": "^2.22.2",
